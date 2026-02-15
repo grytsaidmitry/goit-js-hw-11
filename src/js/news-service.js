@@ -24,7 +24,7 @@ export default class NewsApiService{
         try {
             const axiosFetch = await axios.get(url);
             console.log(axiosFetch);
-            console.log('После запроса, если ок ', this);
+            console.log('После запроса, если все хорошо', this);
             const { data } = axiosFetch;
 
             this.incrementPage();
